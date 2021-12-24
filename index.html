@@ -1,38 +1,410 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-			"http://www.w3.org/TR/html4/strict.dtd">
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Curriculo Vitae</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Abdul Kevin Alexis</title>
 </head>
 
 <body>
-    <h1>Curriculo Vitae</h1>
+    <!-- Header -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">AKA</a>
 
-    <ul id="menu">
-        <li class="ativo">Resumido</li>
-        <li><a href="cv-completo.html">Completo</a></li>
-    </ul>
+            <div class="div nav__menu" id="nav-menu">
+                <ul class="nav__list">
 
-    <div class="secao">
-        <h2>Dados Pessoais</h2>
-        <div id="hcard-Ademir-Mazer-Jr" class="vcard">
-            <a class="url fn n" href="http://ademir.winponta.com.br"> <span class="given-name">Ademir</span>
-                <span class="additional-name">Mazer</span>
-                <span class="family-name">Jr</span>
-            </a>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-heart nav__icon'></i> Início
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i> Perfil
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book-open nav__icon'></i> Formação
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i> Habilidades
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i> Experiência
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i> Certificações
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="div nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt nav__icon'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+
+        <!-- Todos os elementos dessa div são para gerar o pdf -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+
+                <!-- Home -->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/moi.png" alt="Imagem de perfil" class="home__img">
+
+                            <h1 class="home__title">
+                                <b>ABDUL KEVIN</b> ALEXIS
+                                <h3 class="home__profession">Engenheiro de Computação</h3>
+                            </h1>
+                        </div>
+
+                        <div class="home_address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map-pin home__icon'></i>
+                                Belo Horizonte, MG
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i>
+                                lildiop2@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i>
+                                +55 (31) 99100-0150
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Botão de tema light/dark -->
+                    <i class='bx bx-moon change-theme' title="Tema claro/escuro" id="theme-button"></i>
+
+                    <!-- Botão para gerar o pdf -->
+                    <i class='bx bx-download generate-pdf' title="Baixar Currículo em PDF" id="resume-button"></i>
+
+                </section>
+
+                <!-- Social -->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social__container bd-grid">
+
+                        <a href="https://github.com/lildiop2" target="_blank" class="social__link">
+                            <i class='bx bxl-github social__icon'></i> lildiop2
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/abdul-kevin-alexis/" target="_blank" class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon'></i> Abdul-Kevin Alexis
+                        </a>
+
+                        <a href="https://www.instagram.com/lildiop_lastman/" target="_blank" class="social__link">
+                            <i class='bx bxl-instagram social__icon'></i> @lildiop_lastman
+                        </a>
+
+                        <a href="https://www.facebook.com/lildiop2" target="_blank" class="social__link">
+                            <i class='bx bxl-facebook social__icon'></i> @lildiop_lastman
+                        </a>
+
+                    </div>
+                </section>
+
+                <!-- Perfil -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Perfil</h2>
+
+                    <p class="profile__description">
+                        Profissional de tecnologia, graduando em Engenharia de Computação. Atualmente na área de telefonia em nuvem e implementação de solução de comunicação integrada.
+                    </p>
+                </section>
+
+                <!-- Educação -->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Formação</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Engenharia de Computação</h3>
+                                <span class="education__studies">CEFET-MG</span>
+                                <span class="education__year">2018 - 2022</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Administração Pública</h3>
+                                <span class="education__studies">Universidade do Estado do Haiti</span>
+                                <span class="education__year">2014 - Incompleta</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Ensino Médio</h3>
+                                <span class="education__studies">Ecole Frère Hervé</span>
+                                <span class="education__year">2010 - 2014</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Habilidades -->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Habilidades</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Front-End
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Back-End
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>MySQL
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Java
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>REST-API
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Node JS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>HTML5, CSS3 e Bootstrap
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>VUE JS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Javascript
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <h2 class="section-title">Soft Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Trabalho em Equipe
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Mentalidade de Crescimento
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Orientação ao Futuro
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Orientação ao Detalhe
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Comunicação
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Criatividade
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Proatividade
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Persistência
+                            </li>
+                        </ul>
+                    </div> -->
+            </div>
+            </section>
+
+            <div class="resume__right">
+                <!-- Experiências -->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experiência</h2>
+
+                    <div class="experience__container bd-grid">
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Implantação e Suporte </h3>
+                                <span class="experience__company">Suporte TI</span>
+                                <p class="experience__description">Atuo no setor de TI dando suporte aos clientes interno e externo. Configuraçãoes de dispositivos wifi de rede Mesh. Reparação de computadores. Configuração de telefone IP.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Analista de implantação de solução de comunicação Integrada</h3>
+                                <span class="experience__company">Metodo Telecomunicações </span>
+                                <p class="experience__description">Implantação de solução para comunicação integrada com parceiria com Cisco Broadworks. Provisionamento de usuarios na plataforma Voice Manager.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Desenvolvedor</h3>
+                                <span class="experience__company">Voice Manager </span>
+                                <p class="experience__description">Implantação de software de microservices para usuarios finais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certificados -->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificações</h2>
+
+                    <div class="certificate__container bd-grid">
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Introduction to Cybersecurity</h3>
+                            <p class="certificate__description">Cisco | Emitido em abr. de 2021</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Networking Academy Learn-A-Thon 2021</h3>
+                            <p class="certificate__description">Cisco | Emitido em abr. de 2021</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Web Developer</h3>
+                            <p class="certificate__description">Johns Hopkins University | Emitido em jul. de 2020</p>
+                        </div>
+
+
+
+                    </div>
+                </section>
+
+                <!-- Linguagens -->
+                <section class="languages section">
+                    <h2 class="section-title">Idiomas</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Francês | Nativo
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Crioulo Haitiano | Nativo
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Português | Fluente
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Inglês | Intermediário
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Interesses -->
+                <section class="interests section">
+                    <h2 class="section-title">Interesses</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class='bx bx-library interests__icon'></i>
+                            <span class="interests__name">Conhecimento</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-map-pin interests__icon'></i>
+                            <span class="interests__name">Viagem</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-album interests__icon'></i>
+                            <span class="interests__name">Música</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-movie interests__icon'></i>
+                            <span class="interests__name">Cinema</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
+        </div>
+    </main>
 
-    <div class="secao">
-        <h2>Dados Profissionais</h2>
+    <!-- Rolar a tela pra cima -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up-circle scrolltop__icon'></i>
+    </a>
 
-        <p><label>Empresa</label>UTFPR</p>
-        <p><label>Empresa</label>Copel</p>
-        <p><label>Empresa</label>Winponta</p>
-    </div>
+    <!-- HTML/PDF -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
